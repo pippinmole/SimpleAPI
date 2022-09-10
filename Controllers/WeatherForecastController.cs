@@ -24,4 +24,7 @@ public class WeatherForecastController : ControllerBase {
             })
             .ToArray();
     }
+
+    [HttpGet("/GetHostName")]
+    public string GetHostName() => Environment.MachineName;
 }
